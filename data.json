@@ -1,0 +1,73 @@
+
+
+{
+  "Starters": [
+    {
+      "name": "Crispy Calamari",
+      "price": "$11",
+      "description": "Lightly breaded, served with marinara and lemon aioli.",
+      "image": "https://framerusercontent.com/images/ZkCUMZU96GW1ZYqikUvLtIvHf8.jpg",
+      "badges": ["Spicy"]
+    },
+    {
+      "name": "Spinach Artichoke Dip",
+      "price": "$10",
+      "description": "Creamy dip served with toasted pita bread.",
+      "image": "https://framerusercontent.com/images/BlLBrxgu1vUIkrM6S5tYTT4hOE.jpg",
+      "badges": []
+    },
+    {
+      "name": "Truffle Fries",
+      "price": "$9",
+      "description": "Hand-cut fries tossed with truffle oil, parmesan, and fresh herbs.",
+      "image": "https://framerusercontent.com/images/g5j4imsRoE7QKodstw4Lq2M4CXU.jpg",
+      "badges": ["New"]
+    },
+    {
+      "name": "Buffalo Wings",
+      "price": "$12",
+      "description": "Classic wings served with celery and blue cheese dip.",
+      "image": "https://framerusercontent.com/images/QSoE8MxUjqmj41fOGE5mD0ZJv8.jpg",
+      "badges": ["Spicy"]
+    }
+  ],
+
+  "Soups": [
+    {
+      "name": "Miso Ramen",
+      "description": "Traditional Japanese ramen with miso broth and soft-boiled egg.",
+      "price": "$14",
+      "image": "https://framerusercontent.com/images/7GvN0MHRnMt8wrDuy4YwOrm1Xds.jpg",
+      "badges": ["Spicy"]
+    },
+    {
+      "name": "Gazpacho",
+      "description": "Chilled tomato soup with cucumber, bell peppers, and croutons.",
+      "price": "$9",
+      "image": "https://framerusercontent.com/images/d4nLzvhU4F9togu4Rr68hThV0.jpg?scale-down-to=512",
+      "badges": []
+    },
+    {
+      "name": "Lobster Bisque",
+      "description": "Creamy soup made with Atlantic lobster and a hint of cognac.",
+      "price": "$13",
+      "image": "https://framerusercontent.com/images/eRzUIiswpTLGOe2ClCEpNmc2cPI.jpg?scale-down-to=512",
+      "badges": ["New"]
+    },
+    {
+      "name": "Tomato Basil Soup",
+      "description": "Classic soup with grilled cheese croutons.",
+      "price": "$12",
+      "image": "https://framerusercontent.com/images/RulXI8jx6F9cfjPUkw9NiuSE.jpg?scale-down-to=512",
+      "badges": ["Vegan"]
+    },
+    {
+      "name": "French Onion Soup",
+      "description": "Traditional recipe with gruyere cheese.",
+      "price": "$11",
+      "image": "https://framerusercontent.com/images/FHy7kRY4BbG8uWtD40vL9Zokus.jpg?scale-down-to=512",
+      "badges": ["Popular"]
+    }
+  ]
+
+}
