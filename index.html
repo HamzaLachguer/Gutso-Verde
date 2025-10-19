@@ -48,7 +48,7 @@
   <body>
     
 
-    <header class="p-4 bg-white flex flex-col fixed top-0 w-full h-fit lg:h-fit lg:items-center lg:flex-row lg:justify-between lg:px-6">
+    <header class="p-4 bg-white flex flex-col fixed top-0 z-50 w-full h-fit lg:h-fit lg:items-center lg:flex-row lg:justify-between lg:px-6">
       <div class="flex items-center justify-between lg:justify-start gap-8">
         <a href="#" class="" aria-label="back to top">
           <img src="./assets/Gusto Verde – Minimalist Framer Template for Restaurants-30.svg" class="h-8 lg:h-12" alt="gutso verde logo">
@@ -139,7 +139,96 @@
     </header>
 
 
-    <main></main>
+    <main>
+
+      <!-- 
+        
+        // HERO SECTION //
+        //
+      -->
+      <section class="h-[100svh] relative">
+
+        <div class="w-full h-full overflow-hidden">
+          <img class="h-full w-full object-cover object-center" src="https://framerusercontent.com/images/VisDXtOqjIAF4MVLmx5IPB6DE.jpg" alt="hero img">
+        </div>
+
+        <div class="h-full w-full absolute top-0 left-0 bg-gradient-to-r from-black to-white mix-blend-multiply"></div>
+
+        <div class="absolute flex flex-col justify-between top-0 left-0 h-full w-full pt-32 md:pt-40 px-4 md:px-12 pb-12 md:pb-20">
+          <div class="flex flex-col gap-6">
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center gap-2">
+                <div class="h-4 w-4 fill-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-5edd9216-4587-40e3-8e90-5b209a75abd2, rgb(255, 255, 255))"><g color="var(--token-5edd9216-4587-40e3-8e90-5b209a75abd2, rgb(255, 255, 255))" weight="regular"><path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path></g></svg>
+                </div>
+                <div class="uppercase text-sm font-medium text-white tracking-widest">Palo Alto, CA / est. 1984</div>
+              </div>
+
+              <h1 class="font-serif font-light text-white text-[44px] leading-none md:text-[56px] lg:text-7xl lg:w-[652px] md:w-[544px]">Celebration <span class="italic">of</span> Flavor <span class="italic"> and Ambiance</span></h1>
+
+              <p class="text-white text-xl leading-tight md:text-[22px] md:text-2xl md:w-[544px] lg:w-[652px]">Join us for an unforgettable dining experience, crafted with passion and inspired by seasonal flavors.</p>
+            </div>
+
+            <div class="flex flex-col gap-2 md:flex-row">
+              <button aria-label="book a table"
+                      class="flex items-center justify-center gap-[10px] py-3 px-5 rounded-md w-full md:w-fit text-xs uppercase font-medium bg-white transition-300 hover:bg-[#ffffffe0] text-black tracking-widest">
+                <div class="">book a table</div>
+                <div class="h-3 w-3 fill-black">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-27c75f3e-cf4f-4b04-b601-7a6e72286e84, rgb(0, 0, 0))"><g color="var(--token-27c75f3e-cf4f-4b04-b601-7a6e72286e84, rgb(0, 0, 0))" weight="bold"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"></path></g></svg>
+                </div>
+              </button>
+
+              <button aria-label="see Menu"
+                      class="flex items-center justify-center gap-[10px] py-3 px-5 rounded-md w-full md:w-fit text-xs uppercase font-medium border border-white transition-300 text-white tracking-widest">
+                <div class="">see Menu</div>
+                <div class="h-3 w-3 fill-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-27c75f3e-cf4f-4b04-b601-7a6e72286e84, rgb(0, 0, 0))"><g color="var(--token-27c75f3e-cf4f-4b04-b601-7a6e72286e84, rgb(0, 0, 0))" weight="bold"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"></path></g></svg>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div class="pt-6 flex flex-col gap-4 md:flex-row md:gap-6 md:w-fit border-t border-solid border-[#ffffff33]">
+            <a href="#" class="group flex items-center gap-2 md:items-start">
+              <div class="h-[18px] w-[18px] fill-white flex shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-5edd9216-4587-40e3-8e90-5b209a75abd2, rgb(255, 255, 255))"><g color="var(--token-5edd9216-4587-40e3-8e90-5b209a75abd2, rgb(255, 255, 255))" weight="bold"><path d="M128,60a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,60Zm0,64a20,20,0,1,1,20-20A20,20,0,0,1,128,124Zm0-112a92.1,92.1,0,0,0-92,92c0,77.36,81.64,135.4,85.12,137.83a12,12,0,0,0,13.76,0,259,259,0,0,0,42.18-39C205.15,170.57,220,136.37,220,104A92.1,92.1,0,0,0,128,12Zm31.3,174.71A249.35,249.35,0,0,1,128,216.89a249.35,249.35,0,0,1-31.3-30.18C80,167.37,60,137.31,60,104a68,68,0,0,1,136,0C196,137.31,176,167.37,159.3,186.71Z"></path></g></svg>
+              </div>
+
+              <div class="text-white font-normal w-full transition-300 group-hover:text-white-99 md:text-lg md:w-[212px]">Heritage Row, 264 Hamilton Avenue, Palo Alto</div>
+
+              <div class="h-[18px] w-[18px] fill-white flex shrink-0">
+                <svg class="group-hover:rotate-45 transition-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-5edd9216-4587-40e3-8e90-5b209a75abd2, rgb(255, 255, 255))"><g color="var(--token-5edd9216-4587-40e3-8e90-5b209a75abd2, rgb(255, 255, 255))" weight="regular"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></g></svg>
+              </div>
+            </a>
+
+            <div class="flex items-start gap-2">
+              <div class="h-[18px] w-[18px] fill-white">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-5edd9216-4587-40e3-8e90-5b209a75abd2, rgb(255, 255, 255))"><g color="var(--token-5edd9216-4587-40e3-8e90-5b209a75abd2, rgb(255, 255, 255))" weight="bold"><path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm68-84a12,12,0,0,1-12,12H128a12,12,0,0,1-12-12V72a12,12,0,0,1,24,0v44h44A12,12,0,0,1,196,128Z"></path></g></svg>
+              </div>
+
+              <div class="">
+                <div class="flex items-center gap-2 text-white font-normal md:text-lg md:w-[236px] leading-none">
+                  <span class="text-white-99">Sun-Thurs:</span>
+                  <span class>11:30am – 11pm</span>
+                </div>
+                <div class="flex items-center gap-2 text-white font-normal md:text-lg md:w-[236px] leading-none mt-2">
+                  <span class="text-white-99">Fri-Sat:</span>
+                  <span class>11:30am – Midnight</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        
+        // HERO SECTION //
+        //
+      -->
+      <section></section>
+
+    </main>
 
 
     <footer></footer>
