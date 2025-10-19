@@ -21,7 +21,7 @@ let slideIndex = 0;
 function updateSlide(slideIndex) {
   const slide = heroSlides[slideIndex];
   slider.innerHTML = `
-    <img class="h-full w-full object-cover object-center" src=${slide.imgSrc} loading="lazy" alt="hero img ${slide.key}">
+    <img class="h-full w-full object-cover object-center fadeIn" src=${slide.imgSrc} loading="lazy" alt="hero img ${slide.key}">
   `
 }
 
