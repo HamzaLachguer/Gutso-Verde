@@ -30,3 +30,16 @@ body { height: 1000px; }
   height: 0px;
   padding-top: 0px;
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn .5s ease forwards;
+}
