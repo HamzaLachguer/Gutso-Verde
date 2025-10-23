@@ -3,13 +3,15 @@
 {
   "Starters": [
     {
+      "id": "001",
       "name": "Crispy Calamari",
       "price": "$11",
       "description": "Lightly breaded, served with marinara and lemon aioli.",
-      "image": "https://framerusercontent.com/images/ZkCUMZU96GW1ZYqikUvLtIvHf8.jpg",
+      "image": "https://framerusercontent.com/images/ZkCUMZU96GW1ZYqikUvLtIvHf8.jpg?scale-down-to=512",
       "badges": ["Spicy"]
     },
     {
+      "id": "002",
       "name": "Spinach Artichoke Dip",
       "price": "$10",
       "description": "Creamy dip served with toasted pita bread.",
@@ -17,6 +19,7 @@
       "badges": []
     },
     {
+      "id": "003",
       "name": "Truffle Fries",
       "price": "$9",
       "description": "Hand-cut fries tossed with truffle oil, parmesan, and fresh herbs.",
@@ -24,50 +27,197 @@
       "badges": ["New"]
     },
     {
+      "id": "004",
       "name": "Buffalo Wings",
       "price": "$12",
       "description": "Classic wings served with celery and blue cheese dip.",
       "image": "https://framerusercontent.com/images/QSoE8MxUjqmj41fOGE5mD0ZJv8.jpg",
       "badges": ["Spicy"]
+    },
+    {
+      "id": "005",
+      "name": "Onion Rings",
+      "price": "$6",
+      "description": "Served with a side of herb aioli.",
+      "image": "https://framerusercontent.com/images/CcWVlxpH5WTNCGPQgc5PsAYZOrI.jpg?scale-down-to=512",
+      "badges": ["New"]
+    },
+    {
+      "id": "006",
+      "name": "Nashville Hot Fries",
+      "price": "$8",
+      "description": "Served with a side of ranch.",
+      "image": "https://framerusercontent.com/images/CcWVlxpH5WTNCGPQgc5PsAYZOrI.jpg?scale-down-to=512",
+      "badges": ["Spicy"]
+    },
+    {
+      "id": "007",
+      "name": "Wild Mushroom Polenta Hash",
+      "price": "$8",
+      "description": "House made enchilada sauce, red onion, cilantro, and queso fresco on a bed of chips.",
+      "image": "https://framerusercontent.com/images/LGnuIe28Feu5h39a6T7PBmRvsKE.jpg?scale-down-to=512",
+      "badges": ["Chef", "Popular"]
+    },
+    {
+      "id": "008",
+      "name": "Enchilada Chips",
+      "price": "$8",
+      "description": "House made enchilada sauce, red onion, cilantro, and queso fresco on a bed of chips.",
+      "image": "https://framerusercontent.com/images/LzZXIrIdBXrqHQrNOCC8xXbQDU.jpg?scale-down-to=512",
+      "badges": ["Vegan"]
     }
   ],
 
   "Soups": [
     {
+      "id": "suop-001",
       "name": "Miso Ramen",
-      "description": "Traditional Japanese ramen with miso broth and soft-boiled egg.",
+      "description": "Rich broth with noodles, soft egg, and pork belly.",
       "price": "$14",
       "image": "https://framerusercontent.com/images/7GvN0MHRnMt8wrDuy4YwOrm1Xds.jpg",
       "badges": ["Spicy"]
     },
     {
+      "id": "suop-002",
       "name": "Gazpacho",
-      "description": "Chilled tomato soup with cucumber, bell peppers, and croutons.",
-      "price": "$9",
+      "description": "Chilled Spanish tomato soup with cucumber.",
+      "price": "$6",
       "image": "https://framerusercontent.com/images/d4nLzvhU4F9togu4Rr68hThV0.jpg?scale-down-to=512",
-      "badges": []
+      "badges": ["Popular"]
     },
     {
+      "id": "suop-003",
       "name": "Lobster Bisque",
-      "description": "Creamy soup made with Atlantic lobster and a hint of cognac.",
-      "price": "$13",
+      "description": "Creamy lobster soup with brandy and fresh herbs.",
+      "price": "$8",
       "image": "https://framerusercontent.com/images/eRzUIiswpTLGOe2ClCEpNmc2cPI.jpg?scale-down-to=512",
-      "badges": ["New"]
+      "badges": ["Popular", "Gluten Free"]
     },
     {
+      "id": "suop-004",
+      "name": "Chicken Tortilla Soup",
+      "description": "Spicy Mexican-style soup with avocado and tortilla strips.",
+      "price": "$6.5",
+      "image": "https://framerusercontent.com/images/RulXI8jx6F9cfjPUkw9NiuSE.jpg?scale-down-to=512",
+      "badges": ["Spicy", "New", "Chef"]
+    },
+    {
+      "id": "suop-005",
       "name": "Tomato Basil Soup",
       "description": "Classic soup with grilled cheese croutons.",
-      "price": "$12",
-      "image": "https://framerusercontent.com/images/RulXI8jx6F9cfjPUkw9NiuSE.jpg?scale-down-to=512",
+      "price": "$5.5",
+      "image": "https://framerusercontent.com/images/FHy7kRY4BbG8uWtD40vL9Zokus.jpg?scale-down-to=512",
       "badges": ["Vegan"]
     },
     {
+      "id": "suop-006",
       "name": "French Onion Soup",
       "description": "Traditional recipe with gruyere cheese.",
-      "price": "$11",
-      "image": "https://framerusercontent.com/images/FHy7kRY4BbG8uWtD40vL9Zokus.jpg?scale-down-to=512",
+      "price": "$6",
+      "image": "https://framerusercontent.com/images/Z83kbdksm0837EMO1hz39jkBY.jpg?scale-down-to=512",
       "badges": ["Popular"]
     }
-  ]
+  ],
 
+  "Pastas": [
+    {
+      "id": "pastas-001",
+      "name": "Seafood Linguine",
+      "description": "Mixed seafood in white wine sauce.",
+      "price": "$19",
+      "image": "https://framerusercontent.com/images/Eb6um9H2SK9s9i6AiGapSAkAY.jpg?scale-down-to=512",
+      "badges": []
+    },
+    {
+      "id": "pastas-002",
+      "name": "Butternut Squash Ravioli",
+      "description": "House-made ravioli with sage brown butter.",
+      "price": "$17",
+      "image": "https://framerusercontent.com/images/91qfywZnEjQm2oI6Io1AinP0.jpg",
+      "badges": []
+    },
+    {
+      "id": "pastas-003",
+      "name": "Lobster Mac & Cheese",
+      "description": "Creamy three-cheese sauce with fresh lobster meat.",
+      "price": "$18",
+      "image": "https://framerusercontent.com/images/YX8PQq6dIHHSHsjs9iwC7XjkIdo.jpg?scale-down-to=512",
+      "badges": ["Popular"]
+    },
+    {
+      "id": "pastas-004",
+      "name": "Pesto Gnocchi",
+      "description": "House-made potato gnocchi with basil pesto and pine nuts.",
+      "price": "$16",
+      "image": "https://framerusercontent.com/images/sqfkaQ2uf9lnzrjvxLw4qmH8Dw.jpg?scale-down-to=512",
+      "badges": ["Vegan"]
+    },
+    {
+      "id": "pastas-005",
+      "name": "Spaghetti Carbonara",
+      "description": "Classic recipe with pancetta and egg.",
+      "price": "$14",
+      "image": "https://framerusercontent.com/images/g53GAJ2G2FvkavKMVP7ZTamNFo.jpg?scale-down-to=512",
+      "badges": ["Popular"]
+    },
+    {
+      "id": "pastas-006",
+      "name": "Penne Arrabbiata",
+      "description": "Spicy tomato sauce with garlic and herbs.",
+      "price": "$13",
+      "image": "https://framerusercontent.com/images/4yzePLab7ZMIgmx90CiEzK1SoQ.jpg?scale-down-to=512",
+      "badges": ["Spicy", "Vegan"]
+    }
+  ],
+
+  "Desserts": [
+    {
+      "id": "desserts-001",
+      "name": "Key Lime Pie",
+      "description": "Florida-style with whipped cream.",
+      "price": "$7",
+      "image": "https://framerusercontent.com/images/Q4wyLmiM5E1qXCMr3sU5WIP6XDs.jpg?scale-down-to=512",
+      "badges": []
+    },
+    {
+      "id": "desserts-002",
+      "name": "Sticky Toffee Pudding",
+      "description": "Date cake with toffee sauce and ice cream.",
+      "price": "$8",
+      "image": "https://framerusercontent.com/images/0MAiz8UaEmf5bsIaTyI0bAKMZUQ.jpg?scale-down-to=512",
+      "badges": ["New"]
+    },
+    {
+      "id": "desserts-003",
+      "name": "Tiramisu",
+      "description": "Classic Italian dessert with espresso and mascarpone.",
+      "price": "$8",
+      "image": "https://framerusercontent.com/images/IgTnUTSIYFHhBk35hmANSGlgT2Q.jpg?scale-down-to=512",
+      "badges": ["Popular"]
+    },
+    {
+      "id": "desserts-004",
+      "name": "Bourbon Bread Pudding",
+      "description": "Warm bread pudding with bourbon caramel sauce.",
+      "price": "$7.5",
+      "image": "https://framerusercontent.com/images/76rAVkY9R8YAhD4tPyM3MLMEII.jpg?scale-down-to=512",
+      "badges": ["Popular", "Chef"]
+    },
+    {
+      "id": "desserts-005",
+      "name": "Chocolate Lava Cake",
+      "description": "Warm chocolate cake with vanilla ice cream.",
+      "price": "$8",
+      "image": "https://framerusercontent.com/images/ztblEjjGkHBN5HCsdFtaqCoGPkA.jpg?scale-down-to=512",
+      "badges": ["Popular"]
+    },
+    {
+      "id": "desserts-006",
+      "name": "Crème Brûlée",
+      "description": "Classic vanilla bean custard.",
+      "price": "$7.5",
+      "image": "https://framerusercontent.com/images/DWt4UAYERjKdZJcuqfpcH7nSuU.jpg?scale-down-to=512",
+      "badges": ["Chef"]
+    }
+  ]
 }

@@ -15,11 +15,13 @@ const heroSlides = [
 ];
 
 const slider = getElement("#slider");
-
+let heroTimer = null;
 let slideIndex = 0;
 
 function updateSlide(slideIndex) {
   const slide = heroSlides[slideIndex];
+  if (!slide) return;
+
   slider.innerHTML = `
     <img class="h-full w-full object-cover object-center fadeIn" src=${slide.imgSrc} loading="lazy" alt="hero img ${slide.key}">
   `
@@ -32,6 +34,19 @@ function nextSlide() {
 
 
 export function initHero() {
+  if (!slider) {
+    console.warn("⚠️ Slider element not found!");
+    return;
+  }
+
   updateSlide(slideIndex);
-  setInterval(nextSlide, 4000);
+  heroTimer = setInterval(nextSlide, 4000);
+}
+
+
+export function stopSlider() {
+  if (heroTimer) {
+    clearInterval(heroTimer);
+    heroTimer = null;
+  }
 }
