@@ -1,7 +1,7 @@
 import { getElement } from "../utils/dom.js";
 
 
-const heroSlides = [
+const SlidesList = [
   {
     key: "0001",
     imgSrc: "https://framerusercontent.com/images/SQcm6ainaKFCXG0M3Lfpp29Jdg.jpg"
@@ -14,39 +14,39 @@ const heroSlides = [
   },
 ];
 
-const slider = getElement("#slider");
-let heroTimer = null;
-let slideIndex = 0;
-
-function updateSlide(slideIndex) {
-  const slide = heroSlides[slideIndex];
-  if (!slide) return;
-
-  slider.innerHTML = `
-    <img class="h-full w-full object-cover object-center fadeIn" src=${slide.imgSrc} loading="lazy" alt="hero img ${slide.key}">
-  `
-}
-
-function nextSlide() {
-  slideIndex = (slideIndex + 1) % heroSlides.length;
-  updateSlide(slideIndex);
-}
-
-
 export function initHero() {
-  if (!slider) {
-    console.warn("⚠️ Slider element not found!");
-    return;
+  const sliderContainer = getElement("#slider-container");
+  if (!sliderContainer || !SlidesList.length) return;
+
+  let timer = null;
+  let slideIndex = 0;
+  
+  const img = document.createElement("img");
+  img.className = "h-full w-full object-cover object-center fadeIn";
+  img.loading = "lazy";
+  sliderContainer.append(img);
+
+  function updateSlide(slideIndex) {
+    const slide = SlidesList[slideIndex];
+    if (!slide) return;
+
+    img.src = slide.imgSrc;
+    img.alt = `Hero image key: ${slide.key}`;
+
+    img.classList.remove("fadeIn");
+    void img.offsetWidth;
+    img.classList.add("fadeIn");
+  }
+  
+  function nextSlide() {
+    slideIndex = (slideIndex + 1) % SlidesList.length;
+    updateSlide(slideIndex);
   }
 
-  updateSlide(slideIndex);
-  heroTimer = setInterval(nextSlide, 4000);
-}
-
-
-export function stopSlider() {
-  if (heroTimer) {
-    clearInterval(heroTimer);
-    heroTimer = null;
+  function displayHeroSlider() {
+    updateSlide(slideIndex);
+    timer = setInterval(nextSlide, 4000);
   }
+
+  return displayHeroSlider();
 }

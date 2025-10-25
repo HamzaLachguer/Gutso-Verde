@@ -1,4 +1,4 @@
-
+import { getElement } from "../utils/dom.js";
 
 const imagesList = [
   {
@@ -28,74 +28,81 @@ const imagesList = [
 ]
 
 
-let imgIndex = 0;
 
-const toggleContainer = getElement("#img-toggle-container");
-const imgSlideContainer = getElement("#img-slide-container");
-const nextBtn = getElement("#next-btn");
-const prevBtn = getElement("#prev-btn");
-
-// next img
-function nextImg() {
-  imgIndex = (imgIndex + 1) % imagesList.length;
-  updateSlider(imgIndex);
-}
-
-// previous img
-function prevImg() {
-  imgIndex = (imgIndex - 1 + imagesList.length) % imagesList.length;
-  updateSlider(imgIndex);
-}
-
-// generate img
-imgSlideContainer.innerHTML = imagesList.map(img => {
-  // const {id, imgSrc} = img;
-  return `
-    <li class="flex-none w-full h-full">
-      <img class="aspect-square w-full object-cover object-center" src=${img.imgSrc} alt=${img.id}>
-    </li>
-  `;
-}).join("");
-
-// update slider
-function updateSlider(imgIndex) {
-  imgSlideContainer.style.transform = `translateX(-${imgIndex * 100}%)`;
-  toggleContainer.querySelectorAll("button")
-    .forEach(b => {
-      b.className = "h-[10px] w-[10px] rounded-full bg-white opacity-50";
+export function initImgSlider() {
+  let slideIndex = 0;
+  
+  const toggleContainer = getElement("#img-toggle-container");
+  const imgSlideContainer = getElement("#img-slide-container");
+  const nextBtn = getElement("#next-btn");
+  const prevBtn = getElement("#prev-btn");
+  
+  // next img
+  function nextImg() {
+    slideIndex = (slideIndex + 1) % imagesList.length;
+    updateSlider(slideIndex);
+  }
+  
+  // previous img
+  function prevImg() {
+    slideIndex = (slideIndex - 1 + imagesList.length) % imagesList.length;
+    updateSlider(slideIndex);
+  }
+  
+  // generate img
+  imgSlideContainer.innerHTML = imagesList.map(img => {
+    // const {id, imgSrc} = img;
+    return `
+      <li class="flex-none w-full h-full">
+        <img class="aspect-square w-full object-cover object-center" src=${img.imgSrc} alt=${img.id}>
+      </li>
+    `;
+  }).join("");
+  
+  // update slider
+  const baseClass = "h-[10px] w-[10px] rounded-full bg-white"
+  function updateSlider(slideIndex) {
+    imgSlideContainer.style.transform = `translateX(-${slideIndex * 100}%)`;
+    toggleContainer.querySelectorAll("button")
+      .forEach(b => {
+        b.className = `${baseClass}  opacity-50`;
+      })
+      
+    toggleContainer.querySelector(`button[data-slide-index="${slideIndex}"]`)
+      .className = `${baseClass}  opacity-100` ;
+  } 
+  
+  
+  function setActiveConroler(button) {
+    toggleContainer.querySelectorAll("button")
+      .forEach(b => {
+        b.className = `${baseClass} opacity-50`;
+      })
+  
+      button.className = `${baseClass} opacity-100`;
+  }
+  
+  // toggling btns
+  imagesList.forEach((_, index) => {
+    const button = document.createElement("button");
+    const isActive = index === 0;
+    button.className = `${baseClass} ${isActive? "opacity-100" : "opacity-50"}`;
+    button.setAttribute("data-slide-index", index);
+  
+    button.addEventListener('click', () => {
+      slideIndex = button.dataset.slideIndex;
+  
+      setActiveConroler(button);
+      updateSlider(slideIndex);
     })
-    
-  toggleContainer.querySelector(`button[data-slide-index="${imgIndex}"]`)
-    .className = "h-[10px] w-[10px] rounded-full bg-white opacity-100";
-} 
-
-
-function setActiveConroler(button) {
-  toggleContainer.querySelectorAll("button")
-    .forEach(b => {
-      b.className = "h-[10px] w-[10px] rounded-full bg-white opacity-50";
-    })
-
-    button.className = "h-[10px] w-[10px] rounded-full bg-white opacity-100";
-}
-
-// toggling btns
-imagesList.forEach((_, index) => {
-  const button = document.createElement("button");
-  button.className = "h-[10px] w-[10px] rounded-full bg-white opacity-50";
-  button.setAttribute("data-slide-index", index);
-
-  button.addEventListener('click', () => {
-    imgIndex = button.dataset.slideIndex;
-
-    setActiveConroler(button);
-    updateSlider(imgIndex);
+  
+    toggleContainer.append(button);
   })
 
-  toggleContainer.append(button);
-})
+  function displayPhotoSlider() {
+    nextBtn.addEventListener('click', nextImg);
+    prevBtn.addEventListener('click', prevImg);
+  }
 
-export function initImageSlider() {
-  nextBtn.addEventListener('click', nextImg);
-  prevBtn.addEventListener('click', prevImg);
+  return displayPhotoSlider();
 }
