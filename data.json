@@ -1,7 +1,7 @@
 
 
 {
-  "Starters": [
+  "starters": [
     {
       "id": "001",
       "name": "Crispy Calamari",
@@ -68,7 +68,7 @@
     }
   ],
 
-  "Soups": [
+  "soups": [
     {
       "id": "suop-001",
       "name": "Miso Ramen",
@@ -119,7 +119,7 @@
     }
   ],
 
-  "Pastas": [
+  "pastas": [
     {
       "id": "pastas-001",
       "name": "Seafood Linguine",
@@ -170,7 +170,7 @@
     }
   ],
 
-  "Desserts": [
+  "desserts": [
     {
       "id": "desserts-001",
       "name": "Key Lime Pie",

@@ -339,17 +339,17 @@
         </div>
 
         <div class="flex flex-col gap-12 items-center w-full">
-          <ul class="flex items-center gap-6 text-xl md:textext-[22px] lg:text-2xl lg:gap-8">
-            <li>
+          <ul id="dishes-categories" class="flex items-center gap-6 text-xl md:textext-[22px] lg:text-2xl lg:gap-8">
+            <!-- <li>
               <button class="" data-dishe="">Starters</button>
             </li>
             <li>
               <button data-dishe="">Soups</button>
-            </li>
+            </li> -->
           </ul>
 
-          <ul class="grid grid-cols-1 items-start lg:grid-cols-2 gap-6 w-full">
-            <li class="flex gap-4 items-start w-full">
+          <ul id="dishes-list" class="grid grid-cols-1 items-start lg:grid-cols-2 gap-6 w-full">
+            <!-- <li class="flex gap-4 items-start w-full">
               <div class="h-16 w-16 overflow-hidden rounded-lg shrink-0">
                 <img class="h-full w-full object-cover object-center" src="https://framerusercontent.com/images/ZkCUMZU96GW1ZYqikUvLtIvHf8.jpg?scale-down-to=512" alt="">
               </div>
@@ -366,13 +366,16 @@
 
                 <div class="flex flex-col gap-2 md:pr-16">
                   <p class="md:text-lg lg:text-xl">Lightly breaded, served with marinara and lemon aioli.</p>
+                  <div>
+                    <span>ccc</span>
+                  </div>
                 </div>
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
 
-        <button id="image-slide-btn" aria-expanded="false" aria-label="show all images button"
+        <button id="show-all-dishes" aria-expanded="false" aria-label="show all dishes button"
                 class="flex items-center justify-center gap-[10px] py-3 px-5 rounded-md md:w-fit text-xs uppercase font-medium border border-black-1a transition-300 hover:border-black-66 text-black tracking-widest">
           <div class="">see all menu</div>
           <div class="h-3 w-3 fill-black">
@@ -634,5 +637,6 @@
     </div>
 
     <script type="module" src="./JS/script.js"></script>
+    <script type="module" src="./JS/modules/dishes/dishes.js"></script>
   </body>
 </html>

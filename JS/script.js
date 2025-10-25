@@ -16,6 +16,7 @@ const DOM_ELEMENTS = {
 DOM_ELEMENTS.showImgSlider.addEventListener('click', () => {
   DOM_ELEMENTS.imageSlider.classList.remove("hidden");
   DOM_ELEMENTS.imageSlider.classList.add("grid");
+  document.body.classList.add("overflow-hidden");
 
   DOM_ELEMENTS.showImgSlider.setAttribute("aria-expanded", true);
   DOM_ELEMENTS.imageSlider.setAttribute("aria-hidden", false);
@@ -26,6 +27,7 @@ DOM_ELEMENTS.imageSlider.addEventListener('click', (e) => {
   
   DOM_ELEMENTS.imageSlider.classList.remove("grid");
   DOM_ELEMENTS.imageSlider.classList.add("hidden");
+  document.body.classList.remove("overflow-hidden");
 
   DOM_ELEMENTS.showImgSlider.setAttribute("aria-expanded", false);
   DOM_ELEMENTS.imageSlider.setAttribute("aria-hidden", true);
