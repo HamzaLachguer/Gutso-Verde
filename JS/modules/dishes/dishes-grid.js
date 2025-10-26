@@ -17,7 +17,7 @@ function renderDishCard(dish) {
             <div class="bg-black-1a w-full h-[1px]"></div>
           </div>
 
-          <h4 class="flex-none w-fit md:text-lg lg:text-xl">$${price}</h4>
+          <h4 class="flex-none w-fit md:text-lg lg:text-xl">${price}</h4>
         </div>
 
         <div class="flex flex-col gap-2 md:pr-16">

@@ -3,6 +3,8 @@ import { initHero } from "./modules/sliders/hero-slider.js";
 import { initImgSlider } from "./modules/sliders/photo-slider.js";
 
 import { getElement } from "./modules/utils/dom.js";
+import { renderTeamMembers } from "./modules/team/team.js";
+import { initReviewSlider } from "./modules/sliders/review-slider.js";
 
 
 
@@ -44,5 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // const photoSlider = initImgSlider();
   // photoSlider.displayPhotoSlider();
   initImgSlider();
+
+  renderTeamMembers();
+
+  initReviewSlider();
 })
 

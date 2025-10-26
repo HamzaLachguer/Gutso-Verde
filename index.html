@@ -415,7 +415,7 @@
         // TEAM SECTION //
         //
       -->
-      <section id="team-members" class="px-4 md:px-12 lg:px-[68px] py-12 md:py-[72px] flex flex-col gap-12 items-center">
+      <section id="team-members" class="px-4 md:px-12 lg:px-[68px] py-12 md:py-[72px] flex flex-col gap-12 items-center lg:max-w-[1200px] lg:mx-auto">
         <div class="flex items-center flex-col gap-2">
           <h4 class="text-sm uppercase font-medium tracking-widest">team</h4>
           <h2 class="text-center font-serif text-[32px] font-light leading-none md:text-[44px] lg:text-[56px]">The People
@@ -423,8 +423,8 @@
           <p class="text-center leading-normal lg:leading-snug lg:w-fit md:text-lg lg:text-xl">Crafted with care, served with passion, our team brings flavor to life.</p>
         </div>
 
-        <ul class="grid grid-cols-1 gap-6 lg:gap-4 md:grid-cols-2 lg:grid-cols-4">
-          <li class="flex flex-col gap-4">
+        <ul id="team-members-grid" class="grid grid-cols-1 gap-6 lg:gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <!-- <li class="flex flex-col gap-4">
             <div class="h-5/6 md:h-2/3 w-full overflow-hidden rounded-md">
               <img src="https://framerusercontent.com/images/HIGw8PLMKHiI1yNcbj4VB5uV4I.jpg" alt="" class="h-full w-full object-center object-cover">
             </div>
@@ -438,7 +438,7 @@
             <div class="h-6 w-6">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-27c75f3e-cf4f-4b04-b601-7a6e72286e84, rgb(0, 0, 0))"><g color="var(--token-27c75f3e-cf4f-4b04-b601-7a6e72286e84, rgb(0, 0, 0))" weight="regular"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path></g></svg>
             </div>
-          </li>
+          </li> -->
         </ul>
       </section>
 
@@ -453,7 +453,7 @@
 
         <div id="review-slider-container" class="overflow-hidden">
           <ul id="review-list" class="flex gap-0">
-            <li class="flex-none flex flex-col items-start gap-3 w-full">
+            <!-- <li class="flex-none flex flex-col items-start gap-3 w-full">
               <div class="flex items-center gap-2">
                 <span class="font-serif text-xl">5.5</span>
                 <div class="h-6 w-6">
@@ -467,7 +467,7 @@
                 <span class="bg-black h-[1.5px] w-6"></span>
                 <p class="text-xl leading-none md:text-[22px] lg:text-2xl">Emily J.</p>
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
 
@@ -498,7 +498,7 @@
         <ul class="grid gap-6 md:gap-8 lg:gap-4 lg:grid-cols-2">
           <li class="flex gap-4">
             <div class="hidden h-32 w-32 overflow-hidden rounded-lg shrink-0 md:flex">
-              <img src="" class="h-full w-full object-center object-cover" alt="">
+              <img src="https://framerusercontent.com/images/stk0109y2oH2RTtGEPZhxy5tZI.jpg?scale-down-to=512" class="h-full w-full object-center object-cover" alt="">
             </div>
 
             <article class="flex flex-col gap-[6px] md:gap-2">
@@ -612,8 +612,8 @@
 
 
     <div aria-hidden="true" id="img-slider" class="fixed h-full w-full z-50 bg-black-66 top-0 px-4 md:px-36 hidden place-items-center">
-      <id id="img-slider-container" class="relative transition-300 overflow-hidden lg:h-[600px] lg:w-[600px]">
-        <ul id="img-slide-container" class="flex gap-0 shrink-0">
+      <div id="img-slider-container" class="relative overflow-hidden lg:h-[600px] lg:w-[600px]">
+        <ul id="img-slide-container" class="flex gap-0 shrink-0 transition-300">
           <!-- <li class="flex-none w-full h-full">
             <img class="aspect-square w-full object-cover object-center" src="https://framerusercontent.com/images/xzoruV6iJbwSqrs77CL1lSL7I18.jpg?scale-down-to=1024" alt="">
           </li> -->
@@ -633,7 +633,7 @@
             <!-- <button data-slide-index="" class="h-[10px] w-[10px] rounded-full bg-white opacity-50"></button> -->
           </div>
         </div>
-      </id>
+      </div>
     </div>
 
     <script type="module" src="./JS/script.js"></script>
